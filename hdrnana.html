@@ -1,0 +1,503 @@
+
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="zh-cn">
+    
+    <title>Demo</title>
+    </head>
+    
+    <body>
+    <div align="center">
+    <p><font size="6" face="Arial Unicode MS"> HDR-Nana: A Non-attentive Non-autoregressive Hybrid Model for TTS</font><font size="6" face="Arial Unicode MS"></font></p>
+	<p>　</p>
+	</div>
+    <p><b><font face="Arial Unicode MS" size="4"> Note: All test texts are not shown in the training set, and they are converted into system input (Chinese Pinyin with tone and pause) through the pre-trained front-end model.</font></p></b>	    
+    <p>　</p>	
+    <p><b><font face="Arial Unicode MS" size="4"> Part1: Audio samples synthesized by the Tacotron with GMM-based attention, Fastspeech and our HDR-Nana (using the original LPCNet as the vocoder).</font></p></b>
+<div align="left">
+<p><b><font face="Arial Unicode MS" size="4"> Female voice: <font></p></b>
+	<div align="center">
+    <table border="1" width="1010">
+        <tbody><tr>        
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Tacotron with GMM-based attention</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Fastspeech</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 			
+        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example1：胡说！别人不了解，我还不了解你？</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_tacog/1.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_fs/1.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnana/1.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+
+
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Tacotron with GMM-based attention</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Fastspeech</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	
+        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example2：也好，你们促使我做了一个大胆的决定。 </font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_tacog/2.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_fs/2.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnana/2.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Tacotron with GMM-based attention</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Fastspeech</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	
+        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example3：我本不是她正经婆婆，没的摆什么谱，三天两头来见，她也累我也烦。</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_tacog/3.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_fs/3.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnana/3.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Tacotron with GMM-based attention</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Fastspeech</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	
+        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example4：老爷，你可还记得几年前三姑娘夭折的时候。</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_tacog/4.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_fs/4.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnana/4.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Tacotron with GMM-based attention</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Fastspeech</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	
+        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example5：强撑着道：“你念得……很好，只是错了几个字而已，不妨事的，慢慢学就好。”</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_tacog/5.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_fs/5.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnana/5.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Tacotron with GMM-based attention</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Fastspeech</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	
+        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example6：想她堂堂一大学生装文盲容易吗？</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_tacog/6.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_fs/6.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnana/6.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+</tbody></table>
+</div> 
+
+<div align="left">
+<p><b><font face="Arial Unicode MS" size="4"> Male voice: <font></p></b>
+    <table border="1" width="1010">
+        <tbody><tr>        
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Tacotron with GMM-based attention</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Fastspeech</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 			
+        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example1：镇东王府邸占地极广，正门日间夜间都是大大敞开。</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_tacog/1.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_fs/1.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnana/1.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+
+
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Tacotron with GMM-based attention</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Fastspeech</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	
+        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example2：老爷，你可还记得几年前三姑娘夭折的时候。 </font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_tacog/2.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_fs/2.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnana/2.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Tacotron with GMM-based attention</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Fastspeech</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	
+        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example3：强撑着道：“你念得……很好，只是错了几个字而已，不妨事的，慢慢学就好。”</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_tacog/3.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_fs/3.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnana/3.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Tacotron with GMM-based attention</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Fastspeech</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	
+        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example4：哼，那就要命一条要头一颗，真的无路可走，她也不会客气。</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_tacog/4.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_fs/4.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnana/4.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Tacotron with GMM-based attention</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Fastspeech</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	
+        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example5：却被你后娘拿你硬冒名顶了进宫，耽误了你一辈子。</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_tacog/5.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_fs/5.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnana/5.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Tacotron with GMM-based attention</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">Fastspeech</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	
+        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example6：明兰浑身哆嗦着，迅速抬头四下看，只见小船被灯笼照得通明。</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_tacog/6.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_fs/6.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnana/6.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+</tbody></table>
+</div>   
+<p>　</p>
+
+    <p><b><font face="Arial Unicode MS" size="4"> Part2: Audio samples synthesized in ablation studies (using the original LPCNet as the vocoder).</font></p></b>
+<div align="left">
+<p><b><font face="Arial Unicode MS" size="4"> Female voice: <font></p></b>
+	<div align="center">
+    <table border="1" width="1010">
+        <tbody><tr>        
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-ARD</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-CBHGE</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 			
+        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example1：胡说！别人不了解，我还不了解你？</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnanaard/1.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnanacbhge/1.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnana/1.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+
+
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-ARD</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-CBHGE</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example2：也好，你们促使我做了一个大胆的决定。 </font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnanaard/2.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnanacbhge/2.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnana/2.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-ARD</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-CBHGE</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example3：我本不是她正经婆婆，没的摆什么谱，三天两头来见，她也累我也烦。</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnanaard/3.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnanacbhge/3.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnana/3.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-ARD</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-CBHGE</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example4：老爷，你可还记得几年前三姑娘夭折的时候。</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnanaard/4.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnanacbhge/4.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnana/4.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-ARD</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-CBHGE</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example5：强撑着道：“你念得……很好，只是错了几个字而已，不妨事的，慢慢学就好。”</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnanaard/5.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnanacbhge/5.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnana/5.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-ARD</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-CBHGE</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example6：想她堂堂一大学生装文盲容易吗？</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnanaard/6.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnanacbhge/6.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/female_hdrnana/6.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+</tbody></table>
+</div> 
+
+<div align="left">
+<p><b><font face="Arial Unicode MS" size="4"> Male voice: <font></p></b>
+    <table border="1" width="1010">
+        <tbody><tr>        
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-ARD</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-CBHGE</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example1：镇东王府邸占地极广，正门日间夜间都是大大敞开。</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnanaard/1.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnanacbhge/1.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnana/1.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+
+
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-ARD</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-CBHGE</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example2：老爷，你可还记得几年前三姑娘夭折的时候。 </font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnanaard/2.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnanacbhge/2.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnana/2.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-ARD</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-CBHGE</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example3：强撑着道：“你念得……很好，只是错了几个字而已，不妨事的，慢慢学就好。”</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnanaard/3.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnanacbhge/3.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnana/3.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-ARD</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-CBHGE</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example4：哼，那就要命一条要头一颗，真的无路可走，她也不会客气。</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnanaard/4.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnanacbhge/4.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnana/4.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-ARD</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-CBHGE</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example5：却被你后娘拿你硬冒名顶了进宫，耽误了你一辈子。</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnanaard/5.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnanacbhge/5.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnana/5.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+    <table border="1" width="1010">
+        <tbody><tr>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-ARD</font></b></td>
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana-CBHGE</font></b></td>   
+            <td width="120" align="center"><b>
+            <font face="Arial Unicode MS" size="4">HDR-Nana</font></b></td> 	        </tr>
+<div align="left">
+<p><font face="Arial Unicode MS" size="4">  example6：明兰浑身哆嗦着，迅速抬头四下看，只见小船被灯笼照得通明。</font></p>
+<tr>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnanaard/6.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnanacbhge/6.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+<td align="center" valign="middle">&nbsp;&nbsp;<audio controls> <source src="results/male_hdrnana/6.wav" type="audio/wav">
+</audio>&nbsp;&nbsp;</td>
+</tr>
+</tbody></table>
+</div>   
+<p>　</p>		
+
+</body></html>
