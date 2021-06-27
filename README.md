@@ -1,1 +1,1 @@
-Audio samples for paper: HDR-Nana: A Non-attentive Non-autoregressive Hybrid Model for TTS
+Audio samples for paper: Nana-HDR: A Non-attentive Non-autoregressive Hybrid Model for TTS
